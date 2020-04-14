@@ -1556,3 +1556,15 @@
             padding: 3rem 0 8rem 0;
         }
     }
+    
+    @media(max-width:575px) {
+        .banner .banner__right h2 {
+            font-size: 1.5rem;
+        }
+        .banner .banner__right p {
+            font-size: 3rem;
+        }
+        .clients h2 {
+            font-size: 3rem;
+        }
+    }
