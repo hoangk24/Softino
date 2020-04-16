@@ -26,6 +26,34 @@ $('.member__slide .owl-carousel').owlCarousel({
         }
     }
 });
+//  Carousel 
+$('.creative__slide .owl-carousel').owlCarousel({
+    loop: true,
+    margin: 25,
+    nav: false,
+    responsiveClass: true,
+    responsive: {
+        0: {
+            items: 1,
+            nav: true
+        },
+        569: {
+            items: 2,
+        },
+
+        990: {
+            items: 2
+        },
+        991: {
+            items: 2,
+            nav: false
+        },
+        1000: {
+            items: 3,
+            loop: true
+        }
+    }
+});
 //Clients
 const client = document.querySelector(".clients__items");
 const clientItem = document.querySelectorAll(".clients__item");
