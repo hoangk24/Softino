@@ -8,7 +8,7 @@ const menuMobile = {
         this.clickShowmenu('#item6 .list--item-black', '#item6 .drop__menu', 'showMenu');
         this.clickShowmenu('#item7 h5', '#item7 .drop__menu2', 'showmenu2');
         this.clickShowmenu('#item8 h5', '#item8 .drop__menu2', 'showmenu2');
-
+        this.scrollMenu('.header', 'fixmenu');
     },
     clickShowmenu: function(button, menu, togeMenu) {
         let btn = document.querySelector(button);
@@ -16,6 +16,23 @@ const menuMobile = {
         btn.addEventListener('click', () => {
             navMenu.classList.toggle(togeMenu);
         });
+    },
+    scrollMenu: function(menu, classfix) {
+        let Nav = document.querySelector(menu);
+        let heightMenu = document.querySelector(menu).offsetHeight;
+
+        window.addEventListener('scroll', () => {
+            let heightScroll = window.pageYOffset;
+            if (heightScroll >= heightMenu / 2) {
+                Nav.classList.add(classfix);
+            } else {
+                Nav.classList.remove(classfix);
+            }
+
+
+
+        });
     }
 }
+
 menuMobile.init();

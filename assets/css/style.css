@@ -43,6 +43,12 @@
         padding: 1.2rem 0;
         z-index: 99;
         background-color: rgb(255, 255, 255);
+        transition: 0.5s;
+    }
+    
+    .fixmenu {
+        padding: 0;
+        width: 100%;
     }
     
     .header__menu {

@@ -2,6 +2,26 @@ body {
     font-family: 'Nunito', serif;
 }
 
+.header {
+    z-index: 9999;
+}
+
+@media(min-width:992px) {
+    .header {
+        width: 96%;
+        left: 2%;
+        background-color: white;
+    }
+}
+
+.fixmenu {
+    padding: 0.3rem 0;
+    width: 100%;
+    left: 0;
+}
+
+.header .container {}
+
 .about__banner {
     height: 90vh;
     position: relative;
@@ -685,7 +705,7 @@ body {
     .creative {
         padding-bottom: 2rem;
     }
-    .creative__content .creative__last--title h1 {
+    .wrapper .creative .creative__content .creative__last--title h1 {
         font-size: 3.5rem;
     }
     .feature .feature__content h1 {
@@ -699,8 +719,31 @@ body {
     }
 }
 
+.list--social {
+    cursor: pointer;
+}
+
+.list--social li i:hover {
+    animation: xoay 2s;
+}
+
+.footer .footer__email {
+    margin-bottom: 4rem;
+}
+
+@media (max-width:991px) {
+    .about__banner--text {
+        text-align: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .about__banner .about__banner--text .bannerText--left p {
+        padding: 3rem 0;
+    }
+}
+
 @media (max-width:575px) {
-    .creative__content .creative__last--title h1 {
+    .wrapper .creative .creative__content .creative__last--title h1 {
         font-size: 3rem;
     }
     .feature .feature__content h1 {
