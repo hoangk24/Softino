@@ -3,6 +3,7 @@ $('.member__slide .owl-carousel').owlCarousel({
     loop: true,
     margin: 25,
     nav: false,
+    dots: false,
     responsiveClass: true,
     responsive: {
         0: {
@@ -31,6 +32,7 @@ $('.creative__slide .owl-carousel').owlCarousel({
     loop: true,
     margin: 25,
     nav: false,
+    dots: false,
     responsiveClass: true,
     responsive: {
         0: {
@@ -51,6 +53,38 @@ $('.creative__slide .owl-carousel').owlCarousel({
         1000: {
             items: 3,
             loop: true
+        }
+    }
+});
+
+
+$('.testimonal .owl-carousel').owlCarousel({
+    loop: true,
+    margin: 25,
+    nav: false,
+    dots: true,
+    responsiveClass: true,
+    responsive: {
+        0: {
+            items: 1,
+            nav: false
+        },
+        569: {
+            items: 1,
+            nav: false
+        },
+
+        990: {
+            items: 1,
+            nav: false
+        },
+        991: {
+            items: 1,
+            nav: false
+        },
+        1000: {
+            items: 1,
+            loop: false
         }
     }
 });

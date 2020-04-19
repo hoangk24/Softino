@@ -12,8 +12,10 @@ const count = {
         window.addEventListener('scroll', () => {
             let scrollWindowHeight = window.pageYOffset;
             let i = 1000;
+            let dem = 0;
             if (scrollWindowHeight >= heightToWrapper + (height / 2)) {
                 setTimeout(() => {
+                    dem++;
                     let d = setInterval(() => {
                         i += 47;
                         Count1.innerHTML = "" + i + "";
@@ -23,6 +25,9 @@ const count = {
                     }, 100);
                     d();
                 }, 500);
+
+
+
             }
         })
     }
