@@ -27,6 +27,8 @@ $('.member__slide .owl-carousel').owlCarousel({
         }
     }
 });
+
+
 //  Carousel 
 $('.creative__slide .owl-carousel').owlCarousel({
     loop: true,
