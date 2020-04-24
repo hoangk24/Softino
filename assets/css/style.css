@@ -249,6 +249,88 @@
         justify-content: center;
     }
     
+    .banner .banner__left img {
+        animation: xoayBanner 3s 2s;
+    }
+    
+    .banner__right .banner__rigth--content p {
+        animation: xoayBanner2 2s 2s;
+    }
+    
+    .banner__right .banner__rigth--content h5 {
+        animation: onUp 2s 2s;
+    }
+    
+    @keyframes onUp {
+        0% {
+            opacity: 0;
+            transform: translateY(300%);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0%);
+        }
+    }
+    
+    @keyframes xoayBanner2 {
+        0% {
+            opacity: 0.2;
+            transform: rotate(-25deg) scale(0.3);
+        }
+        25% {
+            opacity: 0.5;
+            transform: rotate(25deg) scale(0.6);
+        }
+        45% {
+            transform: rotate(-15deg) scale(1);
+            opacity: 0.7;
+        }
+        56% {
+            opacity: 1;
+            transform: rotate(15deg);
+        }
+        66% {
+            transform: rotate(-10deg);
+        }
+        76% {
+            transform: rotate(10deg);
+        }
+        86% {
+            transform: rotate(8deg);
+        }
+        100% {
+            transform: rotate(0deg);
+        }
+    }
+    
+    @keyframes xoayBanner {
+        0% {
+            opacity: 0.2;
+            transform: rotate(45deg) scale(0.3);
+        }
+        25% {
+            opacity: 0.6;
+            transform: rotate(-45deg) scale(0.6);
+        }
+        45% {
+            transform: rotate(45deg) scale(1);
+            opacity: 1;
+        }
+        56% {
+            transform: rotate(-35deg);
+        }
+        66% {
+            transform: rotate(35deg);
+        }
+        76% {
+            transform: rotate(-25deg);
+        }
+        86% {
+            transform: rotate(25deg);
+        }
+        100% {}
+    }
+    
     .banner .banner__right {
         padding-top: 6rem;
     }
